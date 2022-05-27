@@ -1,0 +1,40 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+header, main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+header h1 {
+    font-size: 2.3rem;
+}
+
+main {
+    width: 400px;
+    height: 400px;
+}
+
+#ligada-desligada {
+    width: 80px;
+    height: 30px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 0px 10px;
+}
