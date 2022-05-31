@@ -1,19 +1,22 @@
 
-var calcular = document.getElementById('calcular')
+let calcular = document.getElementById('calcular')
 
 calcular.addEventListener('click', imc)
 
 function imc() {
+
     const nome = document.getElementById('nome').value
     const altura = document.getElementById('altura').value
     const peso = document.getElementById('peso').value
     const resultado = document.getElementById('resultado')
 
     if (nome == '' || altura == '' || peso == '') {
+        
         window.alert('Por favor, preencha todos os campos para continuar!')
     }
 
     else {
+
         const valor_imc = (peso / (altura * altura)).toFixed(2)
         let classificação = ''
 
