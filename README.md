@@ -1,2 +1,2 @@
 # mini-projetos-javascript
- Mini projetos nível básico em JavaScript
+ Mini projetos em JavaScript
