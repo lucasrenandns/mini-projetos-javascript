@@ -9,6 +9,7 @@ body {
     width: 100vw;
     height: 100vh;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     background-color: grey;
@@ -19,13 +20,13 @@ body {
 .calculator-content {
     background-color: #65a4b9;
     width: 450px;
-    height: 600px;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
-    gap: 30px;
+    gap: 10px;
     border-radius: 10px;
-    padding: 0px 20px;
+    padding: 20px;
 }
 
 .calculator-content h1 {
@@ -50,6 +51,8 @@ body {
 /* label -input */
 
 .label-input {
+    width: 100%;
+    text-align: center;
     padding: 10px;
 }
 
@@ -60,7 +63,7 @@ body {
 }
 
 .label-input input {
-    width: 150px;
+    width: 70%;
     height: 35px;
     padding: 10px;
     font-size: 1rem;
@@ -70,13 +73,9 @@ body {
 
 /* resultado */
 
-#resultado {
-    width: 360px;
-    height: 150px;
-    background-color: #f1f1f1;
-    border-radius: 10px;
-    padding: 20px;
+.resultado {
+    padding: 10px;
     text-align: center;
-    font-size: 1.1rem;
-    line-height: 25px;
+    font-size: 1rem;
+    margin-top: 20px;
 }
