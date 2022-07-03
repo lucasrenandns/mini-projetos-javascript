@@ -5,20 +5,20 @@ const buttons = document.querySelector("#buttons")
 let idInterval = null
 let indiceCor = 0
 
-// Função evento tráfego
+// evento tráfego
 function trafficLight(event) {
 
     pararAutomatico()
     ligado[event.target.id]()
 }
 
-// Função parar automático
+// parar automático
 const pararAutomatico = () => {
 
     clearInterval(idInterval)    
 }
 
-// Função próxima cor
+// próxima cor
 const proximoIndice = () => {
 
     if (indiceCor < 2) {
@@ -29,7 +29,7 @@ const proximoIndice = () => {
     }
 }
 
-// Função cor automática
+// cor automática
 const automaticCor = () => {
 
     const cores = ['red', 'yellow', 'green']
@@ -38,7 +38,7 @@ const automaticCor = () => {
     proximoIndice()
 }
 
-// função ligar semáforo
+// ligar semáforo
 const ligado = {
 
     'red': () => img.src = 'img/vermelho.png',
