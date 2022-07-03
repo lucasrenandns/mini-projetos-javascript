@@ -8,31 +8,33 @@
     <title>Calculadora - IMC</title>
 </head>
 <body>
-    
-    <!--initiation calculator content-->
 
     <div class="calculator-content">
         <h1>Calculadora - IMC</h1>
 
          <div class="label-input">
-            <label for="usuario">Nome:</label>
-            <input type="text" name="usuario" id="nome">
-        </div>
+            <label for="nome">Nome:</label>
+            <input type="text" name="nome" id="nome">
+        </div><!--end label input-->
+
         <div class="label-input">
             <label for="altura">Altura:</label>
             <input type="number" name="altura" id="altura">
-        </div>
+        </div><!--end label input-->
+
         <div class="label-input">
             <label for="peso">Peso:</label>
             <input type="number" name="peso" id="peso">
-        </div>
+        </div><!--end label input-->
 
         <button type="button" id="calcular">Calcular</button>
 
-        <div id="resultado"></div>
-
     </div><!--end calculator content-->
-    
+
+    <div class="resultado">
+        <h2 id="resultado">Preencha os campos e clique no botão</h2>
+    </div><!--end resultado-->
+
     <script src="script.js"></script>
 </body>
 </html>
