@@ -38,7 +38,7 @@ const automaticCor = () => {
     proximoIndice()
 }
 
-// função semáforo ligado
+// função ligar semáforo
 const ligado = {
 
     'red': () => img.src = 'img/vermelho.png',
